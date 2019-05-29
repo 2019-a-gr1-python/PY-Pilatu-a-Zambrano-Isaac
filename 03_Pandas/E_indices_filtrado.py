@@ -1,7 +1,15 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed May 29 07:15:38 2019
+import pandas as pd
+import numpy as np
+path_general='PYTHON_PROJECTS/PY-Pilatu-a-Zambrano-Isaac/03_Pandas/'
+path_guardado=path_general+'data/csv/artwork_data.pickle'
+df_completo_pickle=pd.read_pickle(path_guardado)
 
-@author: Isaac
-"""
+serie_artistas_duplicados = df_completo_pickle['artist']
+artistas = pd.unique(serie_artistas_duplicados)
+artistas.size
 
+len(artistas)
+
+blake=df_completo_pickle['artist']=='Blake, William'
+df_blake=df_completo_pickle[blake]
+type(df_blake)
