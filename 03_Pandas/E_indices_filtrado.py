@@ -11,5 +11,6 @@ artistas.size
 len(artistas)
 
 blake=df_completo_pickle['artist']=='Blake, William'
+blake
 df_blake=df_completo_pickle[blake]
 type(df_blake)
