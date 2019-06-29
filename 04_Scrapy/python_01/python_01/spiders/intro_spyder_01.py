@@ -1,5 +1,5 @@
 import scrapy
-import numyp as np
+import numpy as np
 import pandas as pd
 class IntroSpider(scrapy.Spider):
     name='introduccion_spider'
@@ -13,6 +13,8 @@ class IntroSpider(scrapy.Spider):
             yield scrapy.Request(url=url)
 
     def parse(self,response):
+        path_general='PYTHON_PROJECTS/PY-Pilatu-a-Zambrano-Isaac/04_Scrapy/'
+        path_guardado=path_general+'data/csv/artwork_data.pickle'
         etiqueta_contenedora = response.css('article.product_pod')
         titulos=etiqueta_contenedora.css('h3 > a::attr(title)').extract()
         precios=etiqueta_contenedora.css('div.product_price > p.price_color::text').extract()
@@ -23,4 +25,5 @@ class IntroSpider(scrapy.Spider):
         dic={'Titulos':titulos,'Precios':precios,'Stocks':stocks}
         df=pd.DataFrame(data=dic)
         print(df)
+        df.to_pickle(path_guardado)
 
