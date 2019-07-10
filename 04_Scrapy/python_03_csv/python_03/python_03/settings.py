@@ -64,9 +64,18 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'python_03.pipelines.Python03Pipeline': 300,
-#}
+#El numero demuestra la importancia de los pipelines
+# 10 -> Mas importante  se ejecuta primero
+# 20 -> Se ejecuta segundo
+# 30 -> Se ejecuta tercero
+
+ITEM_PIPELINES = {
+    'python_03.pipelines.FiltrarSoloCapsulas': 300,
+    'python_03.pipelines.TransformarTituloAMinusculas': 200,
+}
+
+FEED_FORMAT = 'csv'
+FEED_URI = 'tmp/productos-fybeca.csv'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
