@@ -72,6 +72,7 @@ ROBOTSTXT_OBEY = True
 ITEM_PIPELINES = {
     'python_03.pipelines.FiltrarSoloCapsulas': 300,
     'python_03.pipelines.TransformarTituloAMinusculas': 200,
+    'python_03.pipelines.FiltrarSuperiores': 250,
 }
 
 FEED_FORMAT = 'csv'

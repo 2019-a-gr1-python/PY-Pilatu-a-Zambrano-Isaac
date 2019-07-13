@@ -26,11 +26,11 @@ class TransformarTituloAMinusculas(object):
         return item
 
 class FiltrarSuperiores(object):
-    productos= pd.read_csv('tmp/productos-fybeca.csv',delimiter=',')
-    promedio=productos['precio'].mean()
     def process_item(self, item, spider):
+        productos= pd.read_csv('tmp/productos-fybeca.csv',delimiter=',')
+        promedio=productos['precio'].mean()
         precio=item['precio']
-        if (precio < promedio):
+        if precio < promedio:
             raise DropItem('Descartado producto con precio menor al promedio')
         else:
             return item
