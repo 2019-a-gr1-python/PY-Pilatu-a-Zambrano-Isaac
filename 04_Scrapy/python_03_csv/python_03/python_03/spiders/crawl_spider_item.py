@@ -20,6 +20,7 @@ class AraniaProductosFybeca(CrawlSpider):
     rules = (
         Rule(
             LinkExtractor(
+                allow= (url_segmento_permitido,)
             ), callback = 'parse'
         ),
     )

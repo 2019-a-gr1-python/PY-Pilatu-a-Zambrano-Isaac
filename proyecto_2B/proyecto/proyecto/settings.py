@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for python_03 project
+# Scrapy settings for proyecto project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'python_03'
+BOT_NAME = 'proyecto'
 
-SPIDER_MODULES = ['python_03.spiders']
-NEWSPIDER_MODULE = 'python_03.spiders'
+SPIDER_MODULES = ['proyecto.spiders']
+NEWSPIDER_MODULE = 'proyecto.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'python_03 (+http://www.yourdomain.com)'
+#USER_AGENT = 'proyecto (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'python_03.middlewares.Python03SpiderMiddleware': 543,
+#    'proyecto.middlewares.ProyectoSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'python_03.middlewares.Python03DownloaderMiddleware': 543,
+#    'proyecto.middlewares.ProyectoDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -64,20 +64,11 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#El numero demuestra la importancia de los pipelines
-# 10 -> Mas importante  se ejecuta primero
-# 20 -> Se ejecuta segundo
-# 30 -> Se ejecuta tercero
-
-ITEM_PIPELINES = {
-    'python_03.pipelines.FiltrarSoloCapsulas': 300,
-    'python_03.pipelines.TransformarTituloAMinusculas': 200,
-    'python_03.pipelines.FiltrarSuperiores': 250,
-}
-
-FEED_FORMAT = 'csv'
-FEED_URI = 'tmp/productos-fybeca-promedio.csv'
-
+#ITEM_PIPELINES = {
+#    'proyecto.pipelines.ProyectoPipeline': 300,
+#}
+FEED_FORMAT = 'json'
+FEED_URI = 'muebles/muebles.json'
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
