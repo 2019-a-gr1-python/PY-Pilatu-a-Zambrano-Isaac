@@ -68,7 +68,7 @@ ROBOTSTXT_OBEY = True
 #    'proyecto.pipelines.ProyectoPipeline': 300,
 #}
 FEED_FORMAT = 'json'
-FEED_URI = 'tmp/muebles.json'
+FEED_URI = 'muebles/muebles.json'
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True

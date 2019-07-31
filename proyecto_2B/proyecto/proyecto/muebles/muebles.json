@@ -41,8 +41,7 @@
 {"nombre": "SILLA BAR MIDORI", "precio_regular": 59.03, "precio_oferta": 51.56, "categoria": "Comedores", "empresa": "El Bosque"},
 {"nombre": "SILLA DE COMEDOR TALIA II", "precio_regular": 63.24, "precio_oferta": 55.24, "categoria": "Comedores", "empresa": "El Bosque"},
 {"nombre": "SILLA DE COMEDOR RANDAL", "precio_regular": 55.3, "precio_oferta": 48.3, "categoria": "Comedores", "empresa": "El Bosque"},
-{"nombre": "Silla De Comedor Jamal", "precio_regular": 87.6, "precio_oferta": 76.52, "categoria": "Comedores", "empresa": "El Bosque"}
-][
+{"nombre": "Silla De Comedor Jamal", "precio_regular": 87.6, "precio_oferta": 76.52, "categoria": "Comedores", "empresa": "El Bosque"},
 {"nombre": "Centro de Entretenimiento Flamenco", "precio_regular": 198.99, "precio_oferta": 198.99, "categoria": "Sala", "empresa": "Pycca"},
 {"nombre": "Sof\u00e1 Cama Joss Gris", "precio_regular": 198.99, "precio_oferta": 198.99, "categoria": "Sala", "empresa": "Pycca"},
 {"nombre": "Bar Meridan Wengue", "precio_regular": 198.99, "precio_oferta": 198.99, "categoria": "Sala", "empresa": "Pycca"},
@@ -154,13 +153,5 @@
 {"nombre": "Juego de Comedor Anya 4 puestos", "precio_regular": 179.89, "precio_oferta": 179.89, "categoria": "Comedores", "empresa": "Pycca"},
 {"nombre": "Comedor Rectangular 6 puestos", "precio_regular": 598.99, "precio_oferta": 598.99, "categoria": "Comedores", "empresa": "Pycca"},
 {"nombre": "Juego de Comedor Triangular 6 Puestos Rojo", "precio_regular": 598.99, "precio_oferta": 598.99, "categoria": "Comedores", "empresa": "Pycca"},
-{"nombre": "Juego de Comedor Triangular 6 Puestos Negro", "precio_regular": 598.99, "precio_oferta": 598.99, "categoria": "Comedores", "empresa": "Pycca"},
-{"nombre": "Silla de Comedor Munich Roja", "categoria": "Comedores", "empresa": "Pycca"},
-{"nombre": "Juego de Comedor London 4 Puestos", "categoria": "Comedores", "empresa": "Pycca"},
-{"nombre": "Juego de Comedor Lance 6 Puestos Caf\u00e9", "categoria": "Comedores", "empresa": "Pycca"},
-{"nombre": "Juego de Comedor Marsella 6 Puestos Caf\u00e9", "categoria": "Comedores", "empresa": "Pycca"},
-{"nombre": "Silla de Comedor Patch Blanco con Negro", "categoria": "Comedores", "empresa": "Pycca"},
-{"nombre": "Bufetera Chocolate 3 Puertas", "categoria": "Comedores", "empresa": "Pycca"},
-{"nombre": "Silla de Bar Par\u00eds Caf\u00e9", "categoria": "Comedores", "empresa": "Pycca"},
-{"nombre": "Silla de Bar Owen Roja", "categoria": "Comedores", "empresa": "Pycca"}
+{"nombre": "Juego de Comedor Triangular 6 Puestos Negro", "precio_regular": 598.99, "precio_oferta": 598.99, "categoria": "Comedores", "empresa": "Pycca"}
 ]
